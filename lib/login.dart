@@ -34,12 +34,14 @@ class LoginScreen extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16.0),
                       child: Container(
-                        constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.8),
+                        constraints: BoxConstraints(
+                            maxWidth: MediaQuery.of(context).size.width * 0.8),
                         child: Center(
                           child: Text(
                             '¡Bienvenid@!',
                             style: TextStyle(
-                              color: Color(0xFF5DAEF1), // Color del recuadro inferior
+                              color: Color(
+                                  0xFF5DAEF1), // Color del recuadro inferior
                               fontSize: 50,
                               fontWeight: FontWeight.bold,
                             ),
@@ -154,7 +156,8 @@ class LoginScreen extends StatelessWidget {
                             minimumSize: MaterialStateProperty.all<Size>(
                               Size(MediaQuery.of(context).size.width * 0.8, 50),
                             ),
-                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                            shape: MaterialStateProperty.all<
+                                RoundedRectangleBorder>(
                               RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(25.0),
                               ),
@@ -183,7 +186,8 @@ class LoginScreen extends StatelessWidget {
                             minimumSize: MaterialStateProperty.all<Size>(
                               Size(MediaQuery.of(context).size.width * 0.8, 50),
                             ),
-                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                            shape: MaterialStateProperty.all<
+                                RoundedRectangleBorder>(
                               RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(25.0),
                               ),

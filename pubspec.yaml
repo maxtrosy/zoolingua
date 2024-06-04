@@ -67,6 +67,16 @@ flutter:
   assets:
      - assets/
      - assets/splash.png
+     - assets/dialogos/
+     - assets/fondos/
+     - assets/iconosJuegos/
+     - assets/imgmatriz/
+     - assets/personajes/
+    
+  fonts:
+      - family: TT_Bricks
+        fonts:
+         - asset: assets/fonts/TT Bricks Trial Black.otf
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
