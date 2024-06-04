@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'linked_list.dart';
+
+
 
 void main() {
-  runApp(const MyApp());
+    WidgetsFlutterBinding.ensureInitialized();
+    runApp(const MyApp());
 }
 
 
@@ -404,9 +408,9 @@ class _SyllableCombinationScreenState extends State<SyllableCombinationScreen> {
     'a','e','i','o','u'
   ];
 
-  List<String> selectedSyllables = [];
+  LinkedList selectedSyllables = LinkedList();
 
-  @override
+   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -430,7 +434,7 @@ class _SyllableCombinationScreenState extends State<SyllableCombinationScreen> {
                     width: MediaQuery.of(context).size.width,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: selectedSyllables.map((syllable) {
+                      children: selectedSyllables.toList().map((syllable) {
                         return GestureDetector(
                           onVerticalDragEnd: (details) {
                             if (details.primaryVelocity! < 0) {
